@@ -1,0 +1,180 @@
+.background {
+  background-color: #e5e5dc;
+  background-size: 180% 180%;
+}
+
+.background-feature {
+  background-color: #e0d9cc;
+  background-size: 180% 180%;
+}
+
+
+
+.bg-body-tertiary {
+  background-color: #e0d9cc !important;
+}
+
+.icon-square {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+}
+
+.profile-img {
+  height: 100px;
+  border-radius: 50%;
+}
+
+.img-fluid {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+h1.display-1 {
+  font-family: "Neutraface-bold";
+  font-size: clamp(2.5rem, 10vw, 11rem);
+  letter-spacing: -0.09em !important;
+  color: #2b2720 !important;
+  margin-top: 2rem;
+}
+
+p {
+  font-family: "Neutraface-book";
+  color: #dedad3 !important;
+}
+
+.text-feature {
+  color: #dedad3 !important;
+}
+
+.text-feature.text-body-secondary {
+  color: #8e8e8e !important;
+}
+
+.text-body-secondary {
+  font-family: "Neutraface-book";
+  color: #8e8e8e !important;
+}
+
+p.intro {
+  font-family: "Neutraface-book";
+  font-size: clamp(20px, 2vw, rem);
+  color: #2b2720 !important;
+}
+
+.card-body {
+  background-color: #2b2720 !important;
+}
+
+p.card-text {
+  color: #c7c7c7 !important;
+}
+
+.fs-5 {
+  font-family: "Neutraface-book";
+  color: #303030 !important;
+}
+
+.nav-item {
+  font-family: "Neutraface-light";
+  margin-right: 24px;
+}
+
+.nav-pills .nav-link.active {
+  background-color: #231f20;
+  color: #fcfcfc !important;
+}
+
+.nav-link {
+  position: relative;
+  text-decoration: none;
+  font-family: "Neutraface-light";
+  color: #231f20 !important;
+  transition: font-family 0.4s ease-in-out;
+}
+
+/* If the user hover or has class active: font becomes bold */
+.nav-link:hover,
+.nav-link.active {
+  font-family: "Neutraface-demi";
+}
+
+.nav-link::before {
+  content: "[";
+  margin-right: 6px;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.nav-link::after {
+  content: "]";
+  margin-left: 6px;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.nav-link:hover::before,
+.nav-link:hover::after,
+.nav-link.active::before,
+.nav-link.active::after {
+  opacity: 1;
+}
+
+.d-block {
+  height: clamp(10rem, 25vw, 20rem);
+  width: clamp(10rem, 25vw, 20rem);
+}
+
+h2.fw-bold {
+  font-family: "Neutraface-demi";
+  font-size: calc(1.47rem + 0.9vw);
+  line-height: normal !important;
+  color: #d8d8d8 !important;
+}
+
+h2.projects {
+  font-family: "Neutraface-bold";
+  font-size: clamp(2rem, 8vw, 10rem);
+  color: #d8d8d8 !important;
+}
+
+.footer-signature {
+  font-family: "Neutraface-bold";
+  font-size: clamp(1rem, 9vw, 11rem);
+  color: #d8d8d8 !important;
+}
+
+.h4,
+h4 {
+  font-family: "Neutraface-book";
+}
+
+.btn {
+  font-family: "Neutraface-light";
+  border-width: 0.5px;
+}
+
+.btn:hover {
+  font-family: "Neutraface-demi";
+  border-width: 1px;
+  background-color: transparent !important;
+  color: #231f20;
+}
+
+.btn-outline-primary {
+  color: #231f20;
+  border-color: #231f20 !important;
+}
+
+.btn-primary {
+  border-width: 0px;
+  background-color: #231f20;
+  color: #e0d9cc;
+}
+
+.btn-primary:hover {
+  border-width: 0px;
+  background-color: #231f20 !important;
+  color: #e0d9cc;
+  font-family: "Neutraface-demi";
+}

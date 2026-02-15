@@ -1,0 +1,43 @@
+@font-face {
+  font-family: 'Neutraface-bold';
+  src: url('./fonts/Neutraface\ Text\ Bold.otf');
+}
+
+@font-face {
+  font-family: 'Neutraface-bold-italic';
+  src: url('./fonts/Neutraface\ Text\ Bold\ Italic.otf');
+}
+
+@font-face {
+  font-family: 'Neutraface-book';
+  src: url('./fonts/Neutraface\ Text\ Book.otf');
+}
+
+@font-face {
+  font-family: 'Neutraface-book-italic';
+  src: url('./fonts/Neutraface\ Text\ Book\ Italic.otf');
+}
+
+@font-face {
+  font-family: 'Neutraface-demi';
+  src: url('./fonts/Neutraface\ Text\ Demi.otf');
+}
+
+@font-face {
+  font-family: 'Neutraface-demi-italic';
+  src: url('./fonts/Neutraface\ Text\ Demi\ Italic.otf');
+}
+
+@font-face {
+  font-family: 'Neutraface-light';
+  src: url('./fonts/Neutraface\ Text\ Light.otf');
+}
+
+@font-face {
+  font-family: 'Neutraface-light-italic';
+  src: url('./fonts/Neutraface\ Text\ Light\ Italic.otf');
+}
+
+
+
+
