@@ -1,12 +1,108 @@
 <%- include("partials/header.ejs") %>
 
-<h1>Create your post</h1>
+<main class="create-post-container container">
+  <div class="row g-5">
+    <div class="col-md-5 col-lg-4 order-md-last">
+      <ul class="list-group mb-3">
+        <li class="list-group-item d-flex justify-content-between lh-sm">
+          <div>
+            <h5 class="my-0">Share your thoughts</h5>
+            <small class="text-body-secondary"
+              >Travel is rarely just about the destination; it’s a collection of
+              quirky, often unscripted moments—like realizing you’ve adopted a
+              new, unintentional habit of greeting street cats in every country
+              or finding comfort in the routine of unpacking in a foreign hotel
+              room. Sometimes it is about the "unplanned detours" that become
+              the highlight. Share your thoughts here! 💕
+            </small>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-7 col-lg-8">
+      <h4 class="mb-3">Your Blog Post</h4>
+      <form
+          action="/submit"
+          method="POST"
+          class="needs-validation"
+          novalidate
+          enctype="multipart/form-data"
+        >
+      
+        <div class="row g-3">
+          <div class="col-sm-6">
+            <label for="author" class="form-label">Author name</label>
+            <input
+              type="text"
+              class="form-control"
+              name="name"
+              id="name"
+              placeholder="Your name"
+              value=""
+              required=""
+            />
+            <div class="invalid-feedback">Valid author name is required.</div>
+          </div>
+          <div class="col-sm-6">
+            <label for="date" class="form-label">Date of written</label>
+            <input
+              type="date"
+              class="form-control"
+              name="date"
+              id="date"
+              placeholder=""
+              value=""
+              required=""
+            />
+            <div class="invalid-feedback">Valid date is required.</div>
+          </div>
+        </div>
+        <div class="col-12">
+          <label for="image" class="form-label">Upload image</label>
+          <input
+            type="file"
+            class="form-control"
+            id="image"
+            name="image"
+            placeholder="/images/Folktale.svg"
+          />
+          <div class="invalid-feedback">Please enter a valid title.</div>
+        </div>
+        <div class="col-12">
+          <label for="title" class="form-label"
+            >Blog Title <span class="text-body-secondary"></span
+          ></label>
+          <input
+            type="text"
+            class="form-control"
+            id="title"
+            name="title"
+            placeholder="Title of your blog"
+          />
+          <div class="invalid-feedback">Please enter a valid title.</div>
+        </div>
+        <div class="col-12">
+          <label for="content" class="form-label">Share your thoughts</label>
 
-  <p>Lorem ipsum dolor sit amet, et proin, justo mus. Porta suspendisse turpis netus sagittis tortor at, vitae aliquet
-    pharetra cras velit, id gravida, neque nulla lorem, posuere hac. Ultricies eget lacus vehicula, in ante aliquam
-    et,facilisis tempor duis orci. Sed molestie sem in duis eu id, nisl id ultricies metus blandit eget praesent, pede
-    tempornullam, vitae arcu tortor suspendisse nibh risus. Nulla id suscipit reiciendis nulla erat. Porta enim aute
-    luctus,ducimus sodales dolor.
-  </p>
+          <textarea
+            type="text"
+            class="form-control"
+            id="content"
+            name="content"
+            placeholder="Your thoughts"
+            rows="6"
+            required=""
+          ></textarea>
+          <div class="invalid-feedback">Please enter your thoughts.</div>
+        </div>
 
+        
+          <button type="submit" class="w-100 btn btn-primary btn-lg">
+            Submit
+          </button>
+        
+      </form>
+    </div>
+  </div>
+</main>
 <%- include("partials/footer.ejs") %>

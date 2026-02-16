@@ -14,21 +14,10 @@
   background-color: #e0d9cc !important;
 }
 
-.icon-square {
-  width: 3rem;
-  height: 3rem;
-  border-radius: 0.75rem;
-}
 
-.profile-img {
-  height: 100px;
-  border-radius: 50%;
-}
 
-.img-fluid {
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
+
+
 
 h1.display-1 {
   font-family: "Neutraface-bold";
@@ -38,9 +27,10 @@ h1.display-1 {
   margin-top: 2rem;
 }
 
-p {
+.author {
   font-family: "Neutraface-book";
-  color: #dedad3 !important;
+  color: #252421 !important;
+  font-size: 14px;
 }
 
 .text-feature {
@@ -56,6 +46,13 @@ p {
   color: #2b2720 !important;
 }
 
+h5 {
+  
+  font-family: "Neutraface-demi";
+  color: #252421 !important;
+
+}
+
 p.intro {
   font-family: "Neutraface-book";
   font-size: clamp(20px, 2vw, rem);
@@ -66,9 +63,7 @@ p.intro {
   background-color: #2b2720 !important;
 }
 
-p.card-text {
-  color: #c7c7c7 !important;
-}
+
 
 .fs-5 {
   font-family: "Neutraface-book";
@@ -146,7 +141,7 @@ h2.projects {
 
 .h4,
 h4 {
-  font-family: "Neutraface-book";
+  font-family: "Neutraface-demi";
 }
 
 .btn {
@@ -177,4 +172,100 @@ h4 {
   background-color: #231f20 !important;
   color: #e0d9cc;
   font-family: "Neutraface-demi";
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+#footer {
+  position: sticky;
+  bottom: 0;
+}
+
+
+
+body {
+  background-color: #e0d9cc;
+  overflow-x: hidden;
+}
+
+.horizontal {
+  position: relative;
+  height: 200vh; /* scroll space */
+  
+}
+
+.horizontal__track {
+  
+ 
+
+  position: sticky;
+  top: 9rem;
+  height: 60vh;
+
+  display: flex;
+  gap: 3rem;
+ 
+
+  align-items: flex-start;
+  padding-left: 4vw; /* the distance between the 1st photo and the left edge */
+ 
+  will-change: transform;
+}
+
+.card {
+  flex: 0 0 auto;
+  width: 24vw;        /* smaller */
+  max-width: 520px;  /* prevents huge screens */
+  height: 68vh;
+  overflow: hidden;
+  border-width: 0px;
+  border-radius: 0px;
+  background-color: #e0d9cc;
+}
+
+.card img {
+  width: 110%;
+  height: 100%;
+  object-fit: cover;
+}
+
+img {
+  padding-bottom: 0.8rem;
+}
+
+.border-top {
+  border-top: 0px !important;
+}
+
+.create-post-container {
+  padding-top: 10rem;
+  padding-bottom: 1rem;
+  margin: 0 auto; /* center horizontally*/
+}
+
+.form-label {
+  padding: 0.3rem;
+  margin-bottom: 0px !important;
+  font-family: "Neutraface-demi";
+  color: #2b2720 !important;
+}
+
+label.form-label {
+  margin-top: 0.4rem;
+}
+
+::placeholder {
+  font-family: "Neutraface-book";
+  color: #2b2720 !important;
+}
+
+button {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
