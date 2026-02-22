@@ -10,10 +10,11 @@
       integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="styles/style.css" />
-    <link rel="stylesheet" href="styles/font.css" />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="/styles/font.css" />
   </head>
-  <header>
+
+  <body>
     <section id="header" class="background-feature">
       <div class="container-fluid px-5">
         <header
@@ -31,7 +32,7 @@
                 role="img"
                 aria-hidden="true"
               >
-                <use href="images/logo-01.svg"></use>
+                <use href="/images/logo-01.svg"></use>
               </svg>
             </a>
           </div>
@@ -39,10 +40,19 @@
             class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0"
           >
             <li class="nav-item">
-              <a href="/" id="n1-0" class="nav-link <%= active === 'home' ? 'active' : ''%> px-2 link-secondary">Home</a>
+              <a
+                href="/"
+                id="n1-0"
+                class="nav-link <%= active === 'home' ? 'active' : ''%> px-2 link-secondary"
+                >Home</a
+              >
             </li>
             <li class="nav-item">
-              <a href="/createpost" class="nav-link <%= active === 'createpost' ? 'active' : ''%> px-2">Create Post</a>
+              <a
+                href="/createpost"
+                class="nav-link <%= active === 'createpost' ? 'active' : ''%> px-2"
+                >Create Post</a
+              >
             </li>
           </ul>
           <div class="col-md-3 text-end">
@@ -54,5 +64,7 @@
         </header>
       </div>
     </section>
-  </header>
-<main>
+
+    <main></main>
+  </body>
+</html>

@@ -4,44 +4,25 @@
 
 <section class="horizontal">
   <div class="horizontal__track">
-    <article id="1" class="card">
-      <img src="/images/UX-Hui-01.svg" alt="">
-      <h5>Kevala Ceramics</h5>
-      <p class="author">UI/UX Design</p>
-    </article>
+  
 
-    <article id="2" class="card">
-      <img src="/images/Folktale.svg" alt="">
-      <h5>Kevala Ceramics</h5>
-      <p class="author">UI/UX Design</p>
-    </article>
-
-    <article id="3" class="card">
+    <!-- <article id="3" class="card">
       <img src="/images/Fitahi.svg" alt="">
       <h5>Kevala Ceramics</h5>
       <p class="author">UI/UX Design</p>
-    </article>
+    </article> -->
 
-    <article id="4" class="card">
-      <img src="/images/Fitahi.svg" alt="">
-      <h5>Kevala Ceramics</h5>
-      <p class="author">UI/UX Design</p>
-    </article>
+    
 
     <% posts.forEach(post => { %>
 <article id="<%= post.id %>" class="card">
+    <a href="/view/<%= post.id %>">
     <img src="<%= post.image %>" alt="">
-    <h5><%= post.title %></h5>
+    </a>
+    <h5><a href="/view/<%= post.id %>"><%= post.title %></a></h5>
     <p class="author"><%= post.author %></p>
   </article>
 <% }) %>
-    
-    
-
-    
-    
-
-    
   </div>
 </section>
 

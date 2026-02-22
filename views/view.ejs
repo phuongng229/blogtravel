@@ -1,0 +1,63 @@
+<%- include("partials/header.ejs") %>
+<section class="background-feature container my-5 page-view">
+    <% if (isDeleteClicked) { %>
+        
+            <div class="modal modal-sheet position-static d-block bg-body-secondary p-4 py-md-5" tabindex="-1" role="dialog" id="modalChoice"> 
+                <div class="modal-dialog"> 
+                    <div class="modal-content rounded-3 shadow"> 
+                        <div class="modal-body p-4 text-center"> 
+                            <h5 class="mb-0">Delete this post?</h5> 
+                            <p class="mb-0">This post will be deleted permanantly.</p> 
+                        <div class="modal-footer d-flex p-0">
+
+          <!-- YES -->
+          <form action="/delete/<%= id %>" method="POST" class="col-6 p-0 m-0">
+            <button
+              type="submit"
+              class="btn btn-lg btn-link fs-6 text-decoration-none w-100 py-3 m-0 rounded-0 border-end"
+            >
+              <strong>Yes, delete it</strong>
+            </button>
+          </form>
+
+          <!-- NO -->
+          <a
+            href="/view/<%= id %>"
+            class="btn btn-lg btn-link fs-6 text-decoration-none col-6 py-3 m-0 rounded-0 text-center"
+          >
+            No thanks
+          </a>
+
+        </div>
+                    </div> 
+                </div> 
+            </div>
+       
+    <% } %>
+  <article class="blogpost">
+    <h1 class="blog-title"><%= title %></h1>
+    <div class="authorAndDate">
+      <div class="authorDate"><h6><%= authorName %></h6></div>
+      <div><h6 class="authorDate">/</h6></div>
+      <div class="authorDate"><h6><%= date %></h6></div>
+    </div>
+    <section class="editAndDelete">
+        <!-- Can't use button here, need to use <a></a> for href -->
+      <a href="/createpost/<%= id %>" class="btn btn-outline-primary me-2"> 
+        Edit
+      </a>
+      <a href="/delete/<%= id %>" class="btn btn-primary"> Delete </a>
+    </section>
+    <img
+      src="<%= imageLink %>"
+      class="img-fluid image-blog"
+      alt="Bootstrap Themes"
+      width="100%"
+      height="100%"
+      loading="lazy"
+    />
+
+    <p><%= content %></p>
+  </article>
+</section>
+<%- include("partials/footer.ejs") %>
